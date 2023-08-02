@@ -1,0 +1,49 @@
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-search {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    background-color: #FFC078;
+}
+
+.search-bar {
+    border: none;
+    padding: 0.3rem;
+    background-color: #ffffff;
+}
+
+.btn-explore {
+    color: #4A66F8;
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.container-memes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+}
+
+.meme-img{
+    width: 100%;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.btn-search {
+    
+}
