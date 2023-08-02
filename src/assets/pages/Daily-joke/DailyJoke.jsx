@@ -9,33 +9,25 @@ const DailyJoke = () => {
 
     const [dailyJoke, setDailyJoke] = useState();
 
-    const options = {
-        method: 'GET',
-        url: 'https://world-of-jokes1.p.rapidapi.com/v1/jokes/joke-of-the-day',
-        headers: {
-          'X-RapidAPI-Key': '4e0129f40cmsh800ffe5967cb12dp179c82jsn533929c5a352',
-          'X-RapidAPI-Host': 'world-of-jokes1.p.rapidapi.com'
-        }
+    const getDailyJoke = () => {
+        axios.get('https://official-joke-api.appspot.com/random_joke').then((response) => {
+          setDailyJoke(response.data);
+        });
       };
-      
     
-    const getJoke = () => {
-     axios.request(options).then((response)=>{
-        console.log(response.data)
-     })
-    }
-
-    getJoke()
-
-    // useEffect(() => {
-    //     getJoke()},[])
+      useEffect(() => {
+        getDailyJoke();
+      }, []);
+      
+   
 
   return (
     <div>
         <h2 className='daily-joke-title'>Daily Joke</h2>
         <div className='content-joke'>
-            <p></p>
-            <p></p>
+        <p>{dailyJoke.type}</p>
+        <p>{dailyJoke.setup}</p>
+        <p>{dailyJoke.punchline}</p>
         </div>
         <SocialInteraction/>
        
