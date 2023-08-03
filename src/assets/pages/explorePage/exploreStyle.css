@@ -17,6 +17,7 @@
 }
 
 .search-bar {
+    border-radius: 3px;
     border: none;
     padding: 0.3rem;
     background-color: #ffffff;
