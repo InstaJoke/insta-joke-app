@@ -25,9 +25,9 @@ const DailyJoke = () => {
     <div>
         <h2 className='daily-joke-title'>Daily Joke</h2>
         <div className='content-joke'>
-        <p>{dailyJoke.type}</p>
-        <p>{dailyJoke.setup}</p>
-        <p>{dailyJoke.punchline}</p>
+        {dailyJoke ? <p>{dailyJoke.type}</p> : <p>loading..</p>}
+        {dailyJoke ? <p>{dailyJoke.setup}</p> : <p>loading..</p>}
+        {dailyJoke ? <p>{dailyJoke.punchline}</p> : <p>loading..</p>}
         </div>
         <SocialInteraction/>
        
