@@ -16,11 +16,13 @@ const ExplorePage = ()=> {
         }
       };
 
-      const getMemes = ()=> {
-        axios.request(options)
+      
+         const getMemes =()=> {
+         axios.request(options)
         .then((response)=> setMemes(response.data.data))
         .catch((e)=>console.log(e))
       }
+    
 
       const handleLimit = ()=> {
         setLimit('8')
@@ -35,10 +37,10 @@ const ExplorePage = ()=> {
             <h1>Explore</h1>
             <div className="container-search">
             <input className="search-bar" type="text" placeholder="Search..."></input>
-            <button className="" ><svg style={{width:"1rem"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+            <button className="btn-search" ><svg style={{width:"1rem"}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                   <path fillRule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clipRule="evenodd" />
                   </svg>
-</button>
+            </button>
             </div>
             <div>
             { memes ? (
@@ -48,13 +50,9 @@ const ExplorePage = ()=> {
                         <img className="meme-img" src={ele.url} />
                     </div>
                 ))}
+                </div>  
+              ) : null  }
             </div>
-
-                
-                ) : null  }
-            </div>
-
-            
             <button onClick={handleLimit} className="btn-explore">See more...</button>
         </div>
     )
