@@ -19,4 +19,20 @@ padding: 20px;
     
 }
 
+.btn-weekly {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color:#FFC078; 
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  
+}
+
+
 

@@ -1,5 +1,5 @@
 import Logo from "./assets/components/logo/logo"
-import DailyJoke from "./assets/pages/Daily-joke/DailyJoke"
+import WeeklyJoke from "./assets/pages/Weekly-joke/WeeklyJoke"
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Logo/>
-    <DailyJoke/>
+    <WeeklyJoke/>
    
     </>
   )

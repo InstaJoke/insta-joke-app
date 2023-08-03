@@ -1,4 +1,66 @@
 .socials {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 10px 20px 20px;
+    display: flex;
+    gap: 10px;
 }
+
+.socials-btn {
+    background-color: #FFC078 ;
+    border-radius: 15px;
+}
+
+.isFavorite {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+  .notFavorite {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+  .isComment {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('data:image/png;base64,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');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+  .notComment {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://static.thenounproject.com/png/1231892-200.png');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+  .isShare {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWUzQBehO190rz2aUoQrzhnGDWKi6a5YbI9f4-t2YEYdm01_r7nu_fvVrp3lE378TAQXk&usqp=CAU');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+  .notShare {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ei-share-apple.svg/768px-Ei-share-apple.svg.png?20141227234923');
+    background-size: 100%;
+    align-self: flex-start;
+  }
+
+
