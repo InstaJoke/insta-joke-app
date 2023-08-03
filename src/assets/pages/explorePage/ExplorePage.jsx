@@ -16,16 +16,14 @@ const ExplorePage = ()=> {
         }
       };
 
-      
-         const getMemes =()=> {
-         axios.request(options)
-        .then((response)=> setMemes(response.data.data))
-        .catch((e)=>console.log(e))
+      const getMemes = ()=> {
+            axios.request(options)
+            .then(response => setMemes(response.data.data))
+            .catch((error) => console.error(error))
       }
-    
 
       const handleLimit = ()=> {
-        setLimit('8')
+        setLimit('5')
       }
 
       useEffect(()=> {
