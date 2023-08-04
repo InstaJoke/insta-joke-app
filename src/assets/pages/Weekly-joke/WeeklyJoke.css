@@ -1,0 +1,38 @@
+
+.daily-joke-title {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+padding: 20px;
+}
+
+.content-joke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    margin: 30px 20px 0;
+    padding: 80px 10px;
+    border-radius: 10px;
+    
+}
+
+.btn-weekly {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color:#FFC078; 
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  
+}
+
+
+

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coiny&family=Merriweather:ital@0;1&family=Roboto:wght@100;300;400&display=swap');
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #FFC078;
+    margin: 0px;
+    padding: 0px;
+}
+.logo-name {
+ font-family: "Coiny";
+ margin: 0px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
