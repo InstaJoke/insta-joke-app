@@ -1,0 +1,16 @@
+
+.ulStyle {
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color:#FFC078;
+    height: 3rem;
+}
+.nav-bar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

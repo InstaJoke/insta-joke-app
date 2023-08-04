@@ -14,11 +14,13 @@
     width: 40px;
     height: 40px;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg');
+    background-color: rgb(255, 255, 255);
     background-size: 100%;
     align-self: flex-start;
   }
 
   .notFavorite {
+    background-color: rgb(255, 255, 255);
     border: none;
     width: 40px;
     height: 40px;
@@ -28,6 +30,7 @@
   }
 
   .isComment {
+    background-color: rgb(255, 255, 255);
     border: none;
     width: 40px;
     height: 40px;
@@ -37,6 +40,7 @@
   }
 
   .notComment {
+    background-color: rgb(255, 255, 255);
     border: none;
     width: 40px;
     height: 40px;
@@ -46,6 +50,7 @@
   }
 
   .isShare {
+    background-color: rgb(255, 255, 255);
     border: none;
     width: 40px;
     height: 40px;
@@ -55,6 +60,7 @@
   }
 
   .notShare {
+    background-color: rgb(255, 255, 255);
     border: none;
     width: 40px;
     height: 40px;
