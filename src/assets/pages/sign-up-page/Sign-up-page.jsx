@@ -1,8 +1,9 @@
-import "./sign-inStyle.css"
+import "./sign-upStyle.css"
 import { Link } from "react-router-dom"
 
 
-const SignInPage = ()=> {
+
+const SignUpPage = ()=> {
     return (
         <>
        <div className="logo-sign-page">
@@ -18,23 +19,30 @@ const SignInPage = ()=> {
        <div >
             <form className="form-container">
                 <div className="container-input">
-                <label>Email</label>
+                <label>First Name: </label>
+                <input className="input-signIn" type="text"></input>
+                </div>
+                <div className="container-input">
+                <label>Last Name: </label>
+                <input className="input-signIn" type="text"></input>
+                </div>
+                <div className="container-input">
+                <label>Email: </label>
                 <input className="input-signIn" type="text"></input>
                 </div>
 
                 <div className="container-input">
-                <label>Password</label>
+                <label>Password: </label>
                 <input className="input-signIn" type="password"></input>
-                <Link to="/home"><button className="btn-signIn">Sign in</button></Link>
+                <Link to="/home"><button className="btn-signIn">Sign up</button></Link>
                 </div>
             </form>
             <div className="container-register">
-            <p>Not a member?</p>
-            <Link to="/register"><button className="btn-register">Register</button></Link>
+
             </div>
        </div>
        </>
     )
 }
 
-export default SignInPage
+export default SignUpPage
