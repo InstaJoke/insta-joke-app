@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Logo from "../../components/Logo/Logo"
 import './WeeklyJoke.css'
 import axios from 'axios';
 import SocialInteraction from '../../components/SocialInteractions/SocialInteraction';
@@ -22,6 +23,7 @@ const WeeklyJoke = () => {
 
   return (
     <div>
+        <Logo/>
         <h2 className='daily-joke-title'>Weekly Joke</h2>
         <div className='content-joke'>
         {weeklyJoke ? <p>{weeklyJoke.type}</p> : <p>loading..</p>}

@@ -1,6 +1,6 @@
 import NavBar from "./assets/components/nav-bar/NavBar"
 import ExplorePage from "./assets/pages/explorePage/ExplorePage"
-import Logo from "./assets/components/logo/logo"
+import SignInPage from "./assets/pages/sign-in-page/Sign-in-page"
 import WeeklyJoke from "./assets/pages/Weekly-joke/WeeklyJoke"
 
 import { Routes,Route } from "react-router-dom"
@@ -11,9 +11,9 @@ function App() {
 
   return (
     <article>
-      <Logo/>
       <Routes>
         <Route path="/explore" element={<ExplorePage />}/>
+        <Route path="/" element={<SignInPage/>} />
         <Route path="/weekly" element={<WeeklyJoke/>}/>
 
       </Routes>
