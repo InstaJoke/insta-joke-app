@@ -1,0 +1,35 @@
+.logo-sigin-page {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.form-container {
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-signIn {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    background-color: #FFC078;
+    border-radius: 6px;
+}
+
+.btn-signIn {
+    margin-top:3rem;
+    background-color: #FFC078;
+    border: none;
+    width: 90%;
+    height: 3rem;
+    border-radius: 1rem;
+}
+.container-input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
