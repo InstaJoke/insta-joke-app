@@ -1,4 +1,5 @@
 import "./exploreStyle.css"
+import Logo from "../../components/Logo/Logo"
 import { useEffect,useState } from "react"
 import axios from "axios"
 
@@ -31,7 +32,9 @@ const ExplorePage = ()=> {
       },[limit])
 
     return (
-        <div className="main-container">
+      <>
+      <Logo />
+      <div className="main-container">
             <h1>Explore</h1>
             <div className="container-search">
             <input className="search-bar" type="text" placeholder="Search..."></input>
@@ -53,6 +56,7 @@ const ExplorePage = ()=> {
             </div>
             <button onClick={handleLimit} className="btn-explore">See more...</button>
         </div>
+        </>
     )
 }
 

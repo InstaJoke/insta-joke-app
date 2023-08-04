@@ -4,7 +4,7 @@ import "./sign-inStyle.css"
 const SignInPage = ()=> {
     return (
         <>
-       <div className="logo-sigin-page">
+       <div className="logo-sign-page">
         <h1>InstaJoke</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" viewBox="0 0 55 50" fill="none">
         <path d="M27.5 44.75C39.3513 44.75 49.125 35.9952 49.125 25C49.125 14.0048 39.3513 5.25 27.5 5.25C15.6487 5.25 5.875 14.0048 5.875 25C5.875 35.9952 15.6487 44.75 27.5 44.75Z" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
@@ -27,9 +27,9 @@ const SignInPage = ()=> {
                 <button className="btn-signIn">Sign in</button>
                 </div>
             </form>
-            <div>
+            <div className="container-register">
             <p>Not a member?</p>
-            <button>Register</button>
+            <button className="btn-register">Register</button>
             </div>
        </div>
        </>

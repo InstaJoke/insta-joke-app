@@ -1,6 +1,7 @@
 
 
 .main-container {
+    margin-top: 1rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -8,7 +9,8 @@
 }
 
 .container-search {
-    margin-top: 1rem;
+    justify-content: space-between;
+    width: 80%;
     display: flex;
     gap: 1rem;
     padding: 0.3rem 1rem;
@@ -20,10 +22,12 @@
     border-radius: 3px;
     border: none;
     padding: 0.3rem;
+    width: 100%;
     background-color: #ffffff;
 }
 
 .btn-explore {
+    font-size: 1.1rem;
     color: #4A66F8;
     width: 7rem;
     height: 2rem;
