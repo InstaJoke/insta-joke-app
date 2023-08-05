@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coiny&family=Merriweather:ital@0;1&family=Roboto:wght@100;300;400&display=swap');
+
+
+.pofile-page{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.myimg {
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.username, h5 {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about-me {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-family: 'Coiny';
+
+}
+
+
+
+
