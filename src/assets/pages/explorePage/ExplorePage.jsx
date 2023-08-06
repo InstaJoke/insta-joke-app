@@ -32,7 +32,7 @@ const ExplorePage = ()=> {
       },[limit])
 
     return (
-      <>
+      <div>
       <Logo />
       <div className="main-container">
             <h1>Explore</h1>
@@ -51,12 +51,14 @@ const ExplorePage = ()=> {
                         <img className="meme-img" src={ele.url} />
                     </div>
                 ))}
+                <button onClick={handleLimit} className="btn-explore">See more...</button>
                 </div>  
               ) : null  }
             </div>
-            <button onClick={handleLimit} className="btn-explore">See more...</button>
+            
         </div>
-        </>
+        <button onClick={handleLimit} className="btn-explore">See more...</button>
+        </div>
     )
 }
 
