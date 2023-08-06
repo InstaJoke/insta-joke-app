@@ -5,6 +5,7 @@ import axios from 'axios';
 import SocialInteraction from '../../components/SocialInteractions/SocialInteraction';
 
 
+
 const WeeklyJoke = () => {
 
     const weekly = {
@@ -32,7 +33,7 @@ const WeeklyJoke = () => {
         <button className="btn-weekly" onClick={handleWeeklyJoke}>Random Joke</button>
         </div>
         <SocialInteraction/>
-       
+   
        
     </div>
   )
