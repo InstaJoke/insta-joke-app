@@ -1,8 +1,10 @@
+
 import "./sign-inStyle.css"
 import { Link } from "react-router-dom"
 
 
 const SignInPage = ()=> {
+
     return (
         <>
        <div className="logo-sign-page">
@@ -33,6 +35,7 @@ const SignInPage = ()=> {
             <Link to="/register"><button className="btn-register">Register</button></Link>
             </div>
        </div>
+       
        </>
     )
 }
