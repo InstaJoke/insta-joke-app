@@ -1,8 +1,23 @@
+
+import { useContext, useState } from "react"
 import "./sign-inStyle.css"
 import { Link } from "react-router-dom"
+import UserContext from '../../contexts/UserContext'
 
 
 const SignInPage = ()=> {
+    const [userLogin,setUserLogin] = useState({})
+    const {user} = useContext(UserContext)
+
+const handleChange = (e)=> {
+    setUserLogin({...userLogin, [e.target.name]: e.target.value})
+}
+
+const handleSubmit=(e)=>{
+e.preventDefault()
+}
+
+
     return (
         <>
        <div className="logo-sign-page">
@@ -16,16 +31,24 @@ const SignInPage = ()=> {
        </div> 
        
        <div >
-            <form className="form-container">
+            <form className="form-container" onSubmit={(e)=>handleSubmit(e,userLogin)}>
                 <div className="container-input">
-                <label>Email</label>
-                <input className="input-signIn" type="text"></input>
+                <label htmlFor="email">Email</label>
+                <input className="input-signIn"
+                 type="text"
+                 name="email"
+                 onChange={handleChange}
+                 ></input>
                 </div>
 
                 <div className="container-input">
-                <label>Password</label>
-                <input className="input-signIn" type="password"></input>
-                <Link to="/home"><button className="btn-signIn">Sign in</button></Link>
+                <label htmlFor="password">Password</label>
+                <input className="input-signIn" 
+                type="password"
+                name="password"
+                onChange={handleChange}
+                ></input>
+                <Link to={user.email == userLogin.email ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
                 </div>
             </form>
             <div className="container-register">
@@ -33,6 +56,7 @@ const SignInPage = ()=> {
             <Link to="/register"><button className="btn-register">Register</button></Link>
             </div>
        </div>
+       
        </>
     )
 }

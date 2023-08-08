@@ -1,7 +1,8 @@
 import "./exploreStyle.css"
-import Logo from "../../components/Logo/Logo"
+import Logo from '../../components/Logo/Logo'
 import { useEffect,useState } from "react"
 import axios from "axios"
+import NavBar from "../../components/nav-bar/NavBar"
 
 const ExplorePage = ()=> {
     const [memes,setMemes] = useState([])
@@ -12,7 +13,7 @@ const ExplorePage = ()=> {
         url: 'https://memes-from-reddit.p.rapidapi.com/memes/top',
         params:{limit:limit},
         headers: {
-          'X-RapidAPI-Key': 'c3ded2cf25mshc554741f85e4dfep1d9b63jsn23564f2e687d',
+          'X-RapidAPI-Key': '4e0129f40cmsh800ffe5967cb12dp179c82jsn533929c5a352',
           'X-RapidAPI-Host': 'memes-from-reddit.p.rapidapi.com'
         }
       };
@@ -58,6 +59,7 @@ const ExplorePage = ()=> {
             
         </div>
         <button onClick={handleLimit} className="btn-explore">See more...</button>
+        <NavBar/>
         </div>
     )
 }

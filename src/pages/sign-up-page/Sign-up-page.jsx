@@ -1,9 +1,24 @@
 import "./sign-upStyle.css"
 import { Link } from "react-router-dom"
-
+import UserContext from "../../contexts/UserContext"
+import { useContext } from "react"
 
 
 const SignUpPage = ()=> {
+
+     const {user,setUser} = useContext(UserContext)
+
+     const handleChange = (e)=> {
+        setUser({...user,[e.target.name]: e.target.value})
+     }
+
+     const handleSubmit = (e)=>{
+        e.preventDefault()
+     }
+
+
+
+
     return (
         <>
        <div className="logo-sign-page">
@@ -16,33 +31,57 @@ const SignUpPage = ()=> {
         </svg>
        </div> 
        
-       <div >
-            <form className="form-container">
+
+       <div>
+            <form className="form-container" onSubmit={(e)=> handleSubmit(e,user)}>
                 <div className="container-input">
-                <label>First Name: </label>
-                <input className="input-signIn" type="text"></input>
+                <label htmlFor="firstName">First Name: </label>
+                <input 
+                className="input-signIn" 
+                type="firstName"
+                name="firstName"
+                onChange={handleChange}
+                ></input>
                 </div>
                 <div className="container-input">
-                <label>Last Name: </label>
-                <input className="input-signIn" type="text"></input>
+                <label htmlFor="lastName">Last Name: </label>
+                <input 
+                className="input-signIn" 
+                type="lastName"
+                name="lastName"
+                onChange={handleChange}
+                ></input>
                 </div>
                 <div className="container-input">
-                <label>Email: </label>
-                <input className="input-signIn" type="text"></input>
+                <label htmlFor="email">Email: </label>
+                <input 
+                className="input-signIn" 
+                type="email"
+                name="email"
+                onChange={handleChange}
+                ></input>
                 </div>
 
                 <div className="container-input">
-                <label>Password: </label>
-                <input className="input-signIn" type="password"></input>
-                <Link to="/home"><button className="btn-signIn">Sign up</button></Link>
+                <label htmlFor="password">Password: </label>
+                <input 
+                className="input-signIn" 
+                type="password"
+                name="password"
+                onChange={handleChange}
+                ></input>
+                <Link to="/home"><button className="btn-signIn" type="submit">Sign up</button></Link>
                 </div>
             </form>
             <div className="container-register">
-
             </div>
        </div>
        </>
     )
 }
+
+/*
+<Link to="/home"></Link>
+*/
 
 export default SignUpPage
