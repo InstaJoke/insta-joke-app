@@ -126,7 +126,6 @@ const HomePage = () => {
           {defaultMemes ? (
             <img
               className="img-content"
-              style={{ width: "100%" }}
               src={defaultMemes}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
@@ -137,7 +136,6 @@ const HomePage = () => {
           ) : (
             <img
               className="img-content"
-              style={{ width: "100%" }}
               src={random.image}
               alt="default meme image"
             />
@@ -182,7 +180,6 @@ const HomePage = () => {
       ) : textJoke && toggle === 3 ? (
         <>
           <div className="content-joke">
-            {/* {textJoke ? <p>{textJoke.type}</p> : <p>loading..</p>} */}
             {textJoke ? <p>{textJoke.setup}</p> : <p>loading..</p>}
             {textJoke ? <p>{textJoke.punchline}</p> : <p>loading..</p>}
             <button className="btn-weekly" onClick={getTextJoke}>
@@ -195,53 +192,10 @@ const HomePage = () => {
         <img style={{width:"100%"}} src={random}/>
        </div>
       )}
-      {/* ------------Random Memes----------- */}
-      {/* <div className={toggle == 2 ? "show-content" : "content"}>
-        <div>
-          <img style={{ width: "100%" }} src={random.image} alt="fhf"></img>
-        </div>
-        <div className="container-btn">
-          <button className="btn-content" onClick={() => setIndx(indx - 1)}>
-            <svg
-              style={{ width: "2rem" }}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-              />
-            </svg>
-          </button>
-          <button className="btn-content" onClick={() => setIndx(indx + 1)}>
-            <svg
-              style={{ width: "2rem" }}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
-        </div>
-      </div> */}
-      {/* ------------Random Memes------------ */}
       <SocialInteraction />
       <NavBar />
     </>
   );
 };
-//
+
 export default HomePage;
