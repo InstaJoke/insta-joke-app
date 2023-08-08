@@ -1,10 +1,10 @@
-import NavBar from "./assets/components/nav-bar/NavBar"
-import ExplorePage from "./assets/pages/explorePage/ExplorePage"
-import SignInPage from "./assets/pages/sign-in-page/Sign-in-page"
-import WeeklyJoke from "./assets/pages/Weekly-joke/WeeklyJoke"
-import SignUpPage from "./assets/pages/sign-up-page/Sign-up-page"
-import ProfilePage from "./assets/pages/Profile-page/ProfilePage"
-import HomePage from "./assets/pages/home-page/HomePage"
+
+import ExplorePage from './pages/explorePage/ExplorePage'
+import SignInPage from "./pages/sign-in-page/Sign-in-page"
+import WeeklyJoke from "./pages/Weekly-joke/WeeklyJoke"
+import SignUpPage from "./pages/sign-up-page/Sign-up-page"
+import ProfilePage from "./pages/Profile-page/ProfilePage"
+import HomePage from "./pages/home-page/HomePage"
 
 import { Routes,Route } from "react-router-dom"
 import "./App.css"
@@ -21,9 +21,8 @@ function App() {
         <Route path="/weekly" element={<WeeklyJoke/>}/>
         <Route path="/register" element={<SignUpPage />}/>
         <Route path="/profile" element={<ProfilePage/>}/>
-
       </Routes>
-      <NavBar />
+
     </article>
   )
 }

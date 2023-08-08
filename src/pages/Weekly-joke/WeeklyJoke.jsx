@@ -3,6 +3,7 @@ import Logo from "../../components/Logo/Logo"
 import './WeeklyJoke.css'
 import axios from 'axios';
 import SocialInteraction from '../../components/SocialInteractions/SocialInteraction';
+import NavBar from '../../components/nav-bar/NavBar';
 
 
 
@@ -34,7 +35,7 @@ const WeeklyJoke = () => {
         </div>
         <SocialInteraction/>
    
-       
+       <NavBar/>
     </div>
   )
 }

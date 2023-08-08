@@ -1,7 +1,8 @@
 import "./exploreStyle.css"
-import Logo from "../../components/Logo/Logo"
+import Logo from '../../components/Logo/Logo'
 import { useEffect,useState } from "react"
 import axios from "axios"
+import NavBar from "../../components/nav-bar/NavBar"
 
 const ExplorePage = ()=> {
     const [memes,setMemes] = useState([])
@@ -58,6 +59,7 @@ const ExplorePage = ()=> {
             
         </div>
         <button onClick={handleLimit} className="btn-explore">See more...</button>
+        <NavBar/>
         </div>
     )
 }
