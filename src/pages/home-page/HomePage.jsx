@@ -34,8 +34,8 @@ const HomePage = () => {
     method: "GET",
     url: "https://memes-from-reddit.p.rapidapi.com/memes/",
     headers: {
-      "X-RapidAPI-Key": "4e0129f40cmsh800ffe5967cb12dp179c82jsn533929c5a352",
-      "X-RapidAPI-Host": "memes-from-reddit.p.rapidapi.com",
+      'X-RapidAPI-Key': 'daa435a9a2msh694f34f66f41d8dp1342eajsn9512db48cff2',
+      'X-RapidAPI-Host': 'memes-from-reddit.p.rapidapi.com'
     },
   };
   const getMemes = () => {
@@ -191,7 +191,6 @@ const HomePage = () => {
       ) : (
        <div className="show-content">
         <img className="img-content" src={random}/>
-        <div className="random-space"></div>
        </div>
       )}
       <SocialInteraction />

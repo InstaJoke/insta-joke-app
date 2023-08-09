@@ -126,9 +126,8 @@
     }
     .img-content {
         padding:0 0 0 0;
-        position: absolute;
-        width: 42%;
-        transform: translate(19rem,1rem);
+        position: normal;
+        width: 100%;
     }
 
     .btn {
@@ -144,8 +143,8 @@
         transition-duration:0.6s ;
         z-index: 1;
         cursor: pointer;
-        margin-bottom: 26.5rem;
-        margin-top: 17rem;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .btn-content:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -212,14 +211,18 @@
       }
 
     .container-btn {
-        margin: 0 -8rem 0 4rem;
+        margin: 0 -10rem 0 -10rem;
     }
     .show-content {
+        margin-left: 22rem;
         margin-top: 2rem;
+        width: 30%;
+
     }
     .socials {
         position: relative;
-        margin: 2rem 0 0 13rem;
+        margin: 2rem 0 0 22rem;
+
     }
     .header {
         display: none;
@@ -237,17 +240,15 @@
 /*------------------ DESKTOP ( 1640px)-------------------*/
 
 @media screen and (min-width:1640px) {
-    .img-content {
-        width: 27%;
-        transform: translate(36rem,1rem);
-    }
     .socials {
-        margin: -2rem 0 0 38rem;
+        margin: 2rem 0 0 34rem;
     }
-    .container-btn {
-        margin: 0 10% 0 29%;
-    }
+
     .content-joke {
         margin: 4rem 16rem 4rem;
+    }
+    .show-content {
+        margin-left: 33rem;
+        width: 35%;
     }
 }

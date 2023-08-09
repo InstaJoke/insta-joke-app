@@ -13,7 +13,7 @@ const ExplorePage = ()=> {
         url: 'https://memes-from-reddit.p.rapidapi.com/memes/top',
         params:{limit:limit},
         headers: {
-          'X-RapidAPI-Key': '4e0129f40cmsh800ffe5967cb12dp179c82jsn533929c5a352',
+          'X-RapidAPI-Key': 'daa435a9a2msh694f34f66f41d8dp1342eajsn9512db48cff2',
           'X-RapidAPI-Host': 'memes-from-reddit.p.rapidapi.com'
         }
       };
@@ -58,7 +58,6 @@ const ExplorePage = ()=> {
             </div>
             
         </div>
-        <button onClick={handleLimit} className="btn-explore">See more...</button>
         <NavBar/>
         </div>
     )
