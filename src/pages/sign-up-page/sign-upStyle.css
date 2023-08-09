@@ -6,11 +6,16 @@
 }
 
 .form-container {
-    margin-top: 50%;
+    margin-top: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.form-content {
+    margin: 0 1.1rem;
 }
 
 .input-signIn {
@@ -21,13 +26,14 @@
     border-radius: 6px;
 }
 
-.btn-signIn {
+.btn-signUp {
     margin-top:3rem;
     background-color: #FFC078;
     border: none;
     width: 100%;
     height: 3rem;
     border-radius: 1rem;
+    font-size: 1.4rem;
 }
 .container-input {
     display: flex;
@@ -51,3 +57,45 @@
     background-color: white;
     color: #4C6BF4;
 }
+
+@media screen and (min-width:768px) {
+    .container-input {
+        
+        width: 70%;
+        margin: 0 auto;
+    }
+    .form-container {
+        margin-top: 9%; 
+      }
+
+}
+  
+@media screen and (min-width:1024px) {
+   
+    .form-container {
+      margin-top: 5%;
+    }
+    .container-input {
+        width: 65%;
+        margin: 0 auto;
+    }
+ 
+  }
+  
+  @media screen and (min-width:1440px) {
+    .form-container {
+        margin-top: 3%;
+      }
+    .container-input {
+        width: 43%;
+        margin: 0 auto;
+    }
+    .logo-sign-page {
+        margin-top: 3rem;
+    }
+
+  }
+  
+    
+  
+  

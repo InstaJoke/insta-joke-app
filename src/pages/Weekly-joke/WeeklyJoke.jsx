@@ -28,9 +28,9 @@ const WeeklyJoke = () => {
         <Logo/>
         <h2 className='daily-joke-title'>Weekly Joke</h2>
         <div className='content-joke'>
-        {weeklyJoke ? <p className='title-joke'>{weeklyJoke.type}</p> : <p>loading..</p>}
-        {weeklyJoke ? <p>{weeklyJoke.setup}</p> : <p>loading..</p>}
-        {weeklyJoke ? <p>{weeklyJoke.punchline}</p> : <p>loading..</p>}
+        {weeklyJoke ? <p className='title-joke'>{weeklyJoke.type.toUpperCase()}</p> : <p>loading..</p>}
+        {weeklyJoke ? <p className='joke-line'>{weeklyJoke.setup}</p> : <p>loading..</p>}
+        {weeklyJoke ? <p className='joke-line'>{weeklyJoke.punchline}</p> : <p>loading..</p>}
         <button className="btn-weekly" onClick={handleWeeklyJoke}>Random Joke</button>
         </div>
         <SocialInteraction/>
