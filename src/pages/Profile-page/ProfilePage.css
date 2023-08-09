@@ -11,6 +11,14 @@
     font-size: 1rem;
 }
 
+.username {
+    font-size: 1.5rem;
+}
+
+.email {
+    font-size: 1.2rem;
+}
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -34,8 +42,8 @@
 }
 
 .about-me {
-    margin-top: 40px;
-    margin-left: 10px;
+    margin: 4rem 2rem 0 2rem;
+    font-size: 1.2rem;
 }
 
 h3 {
@@ -44,6 +52,84 @@ h3 {
 
 }
 
+.btn-Logout{
+  width: 10rem;
+  margin: 1.2rem 0 2rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFC078;
+  border: none;
+  height: 3rem;
+  border-radius: 1rem;
+  
+}
+
+
+.footer {
+    display: none;
+  }
+  
+
+  @media screen and (min-width:1024px) {
+    .nav-bar {
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        width:30%;
+        height: 100%;
+    }
+    .ulStyle {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        background-color: #FFC078;
+        flex-direction: row;
+        align-content: center;
+        gap: 3rem;
+        height: 2.2rem;
+        margin-top: 0.2rem;
+    }
+    .logo {
+        justify-content: normal;
+    }
+    .logo-name {
+        margin-left: 3rem;
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFC078;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3rem;
+      font-size: 1.3rem;
+    }
+   
+  }
+  
+
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
 
 
 

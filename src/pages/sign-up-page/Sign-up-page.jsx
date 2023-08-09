@@ -32,7 +32,7 @@ const SignUpPage = ()=> {
        </div> 
        
 
-       <div>
+       <div className="form-content">
             <form className="form-container" onSubmit={(e)=> handleSubmit(e,user)}>
                 <div className="container-input">
                 <label htmlFor="firstName">First Name: </label>
@@ -70,11 +70,10 @@ const SignUpPage = ()=> {
                 name="password"
                 onChange={handleChange}
                 ></input>
-                <Link to="/home"><button className="btn-signIn" type="submit">Sign up</button></Link>
+                <Link to="/home"><button className="btn-signUp" type="submit">Sign up</button></Link>
                 </div>
             </form>
-            <div className="container-register">
-            </div>
+   
        </div>
        </>
     )

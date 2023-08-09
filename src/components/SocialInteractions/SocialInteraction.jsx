@@ -47,7 +47,7 @@ const SocialInteraction = () => {
   }
 
   return (
-    <div>
+    <div >
     <div className='socials'>
        <button onClick={handleBtn} className={like}></button>
        <button onClick={handleComment} className={comment}></button>
