@@ -73,8 +73,7 @@ const SignUpPage = ()=> {
                 <Link to="/home"><button className="btn-signUp" type="submit">Sign up</button></Link>
                 </div>
             </form>
-            <div className="container-register">
-            </div>
+   
        </div>
        </>
     )

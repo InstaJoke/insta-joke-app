@@ -55,7 +55,7 @@ e.preventDefault()
             <p>Not a member?</p>
             <Link to="/register"><button className="btn-register">Register</button></Link>
             </div>
-            <footer className='footer'>Copyright &copy; InstaJoke 2023</footer>
+            
        </div>
        
        </>

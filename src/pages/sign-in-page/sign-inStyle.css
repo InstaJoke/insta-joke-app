@@ -25,12 +25,15 @@
     margin-top:4rem;
     background-color: #FFC078;
     border: none;
-    width: 90%;
     height: 3rem;
     border-radius: 1rem;
-   
+    width: 10rem;
+    margin: 1.2rem 0 2rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
-   
+
+
 
 .container-input {
     display: flex;
@@ -38,14 +41,16 @@
     width: 90%;
 }
 
+
 .container-register {
     font-size: 1.2rem;
     gap: 0.2rem;
-    margin-top: 15%;
+    margin-top: 6%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-size: 1.4rem;
 }
 
 .btn-register{
@@ -55,9 +60,6 @@
     color: #4C6BF4;
 }
 
-.footer {
-    display: none;
-  }
 
 @media screen and (min-width:768px) {
 
@@ -66,52 +68,14 @@
   
   
   @media screen and (min-width:1024px) {
-    .nav-bar {
-        overflow: hidden;
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        right: 0;
-        width:30%;
-        height: 100%;
-    }
-    .ulStyle {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        background-color: #FFC078;
-        flex-direction: row;
-        align-content: center;
-        gap: 3rem;
-        height: 2.2rem;
-        margin-top: 0.2rem;
-    }
-    .logo {
-        justify-content: normal;
-    }
-    .logo-name {
-        margin-left: 3rem;
-    }
-  
-    .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #FFC078;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 3rem;
-      font-size: 1.3rem;
-    }
+
     
   }
   
   @media screen and (min-width:1440px) {
-   
-   
-  
+    .container-register {
+        margin-top: 2%;
+    }
    
   }
   

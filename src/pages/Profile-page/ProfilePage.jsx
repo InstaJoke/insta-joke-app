@@ -26,7 +26,7 @@ const ProfilePage = () => {
               </div>
               
           </div>
-          <Link to="/"><button className="btn-signIn">Logout</button></Link>
+          <Link to="/"><button className="btn-Logout">Logout</button></Link>
           <footer className='footer'>Copyright &copy; InstaJoke 2023</footer>
           <NavBar/>
           </div>
