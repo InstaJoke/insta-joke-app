@@ -30,6 +30,7 @@ const HomePage = () => {
   /*--------------------DEFAULT MEMES----------*/
   const [defaultMemes, setDefaultMemes] = useState();
   const [indx, setIndx] = useState(0);
+  
   const mainMemes = {
     method: "GET",
     url: "https://memes-from-reddit.p.rapidapi.com/memes/",
@@ -42,12 +43,12 @@ const HomePage = () => {
     axios
       .request(mainMemes)
       .then((response) => {
-        // console.log(response.data.data);
+
         setDefaultMemes(response.data?.data[indx]?.url);
       })
       .catch((error) => {
         console.error(error);
-        // console.log(Math.floor(Math.random() * (4 - 0 + 1)) + 0)
+
         setDefaultMemes(
           randomMemes[Math.floor(Math.random() * (4 - 0 + 1)) + 0]
         );
