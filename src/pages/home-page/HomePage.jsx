@@ -26,6 +26,7 @@ const randomMemes = [
 ];
 /*--------------------RANDOM MEMES----------*/
 const HomePage = () => {
+
   /*--------------------DEFAULT MEMES----------*/
   const [defaultMemes, setDefaultMemes] = useState();
   const [indx, setIndx] = useState(0);
@@ -188,8 +189,9 @@ const HomePage = () => {
           </div>
         </>
       ) : (
-       <div>
-        <img style={{width:"100%"}} src={random}/>
+       <div className="show-content">
+        <img className="img-content" src={random}/>
+        <div className="random-space"></div>
        </div>
       )}
       <SocialInteraction />

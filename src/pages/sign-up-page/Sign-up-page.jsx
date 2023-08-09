@@ -33,7 +33,7 @@ const SignUpPage = ()=> {
        
 
        <div>
-            <form className="form-container" onSubmit={(e)=> handleSubmit(e,user)}>
+            <form className="form-sign-up" onSubmit={(e)=> handleSubmit(e,user)}>
                 <div className="container-input">
                 <label htmlFor="firstName">First Name: </label>
                 <input 
