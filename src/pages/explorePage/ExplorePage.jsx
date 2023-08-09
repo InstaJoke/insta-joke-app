@@ -6,7 +6,7 @@ import NavBar from "../../components/nav-bar/NavBar"
 
 const ExplorePage = ()=> {
     const [memes,setMemes] = useState([])
-    const [limit,setLimit] = useState('2')
+    const [limit,setLimit] = useState(4)
 
     const options = {
         method: 'GET',
@@ -25,7 +25,7 @@ const ExplorePage = ()=> {
       }
 
       const handleLimit = ()=> {
-        setLimit('5')
+        setLimit(limit + 4)
       }
 
       useEffect(()=> {
@@ -52,10 +52,10 @@ const ExplorePage = ()=> {
                         <img className="meme-img" src={ele.url} />
                     </div>
                 ))}
-                <button onClick={handleLimit} className="btn-explore">See more...</button>
                 </div>  
               ) : null  }
             </div>
+              <button onClick={handleLimit} className="btn-explore">See more...</button>
             
         </div>
         <NavBar/>

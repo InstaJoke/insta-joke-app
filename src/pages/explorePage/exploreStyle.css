@@ -56,3 +56,62 @@
     border: none;
     background-color: #FFC078;
 }
+
+
+/*------------------ TABLET VERSION ( 768px )--------------------------*/
+
+@media screen and (min-width:768px) {
+    .container-memes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem;
+    }
+}
+/*------------------ LAPTOP VERSION ( 1024px )--------------------------*/
+
+@media screen and (min-width:1024px) {
+    .container-memes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 4rem 2rem 2rem 7rem;
+    }
+    .search-bar {
+        padding: 0.5rem;
+    }
+    .meme-img {
+        z-index: 1;
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+    .meme-img:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .btn-explore {
+        cursor: pointer;
+        transition: all 0.8s;
+    }
+    .btn-explore:hover {
+        border-radius: 2rem;
+        border: 1px solid #fcad52;
+    }
+    .btn-search {
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+/*------------------ DESKTOP VERSION ( 1640px )--------------------------*/
+
+@media screen and (min-width:1640px) {
+    .container-memes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 2rem 11rem 2rem 11rem;
+    }
+    .search-bar {
+        padding: 0.5rem;
+    }
+
+}
+
