@@ -5,6 +5,19 @@
     gap: 10px;
     margin-left: 20px;
 }
+.content-joke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    margin: 30px 20px 0;
+    padding: 80px 10px;
+    border-radius: 10px;
+    height: 15rem;
+    text-align: center;
+    
+}
 .header {
     margin-top: 15px;
 }
@@ -237,15 +250,29 @@
     }
 }
 
+/*------------------ LAPTOP ( 1440px)-------------------*/
+@media screen and (min-width:1440px) {
+    .show-content {
+        margin-left: 33rem;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    .socials {
+        position: relative;
+        margin: 2rem 0 0 33rem;
+    }
+}
 /*------------------ DESKTOP ( 1640px)-------------------*/
 
 @media screen and (min-width:1640px) {
     .socials {
-        margin: 2rem 0 0 34rem;
+        margin: 2rem 0 2rem 33rem;
     }
 
     .content-joke {
-        margin: 4rem 16rem 4rem;
+        height: 15rem;
+        margin: 2rem 2rem -0.7rem 30rem;
+        width: 40%;
     }
     .show-content {
         margin-left: 33rem;
