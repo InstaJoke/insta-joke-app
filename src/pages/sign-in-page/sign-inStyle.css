@@ -22,30 +22,40 @@
 }
 
 .btn-signIn {
-    margin-top:3rem;
+    cursor: pointer;
+    margin-top:4rem;
     background-color: #FFC078;
     border: none;
-    width: 90%;
     height: 3rem;
     border-radius: 1rem;
+    width: 10rem;
+    margin: 1.2rem 0 2rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
+
+
+
 .container-input {
     display: flex;
     flex-direction: column;
     width: 90%;
 }
 
+
 .container-register {
     font-size: 1.2rem;
     gap: 0.2rem;
-    margin-top: 15%;
+    margin-top: 6%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-size: 1.4rem;
 }
 
 .btn-register{
+    cursor: pointer;
     font-size: 1.2rem;
     border: none;
     background-color: white;
@@ -53,11 +63,32 @@
 }
 
 @media screen and (min-width:1024px) {
-    .form-sign-in {
-        margin-top: 12%;
+   .form-sign-in {
+    margin-top:28%;
+   }
+  }
+  
+  @media screen and (min-width:1440px) {
+    .container-register {
+        margin-top: 2%;
     }
-    .container-input {
-        width: 45%;
-        gap: 0.5rem;
-    }
-}
+   .form-sign-in {
+    margin-top:15%;
+   }
+  }
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  

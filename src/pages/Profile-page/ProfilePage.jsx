@@ -19,14 +19,15 @@ const ProfilePage = () => {
               <h4>{user.firstName}</h4>
               <h4>{user.lastName}</h4>
               </div>
-              <h5>{user.email}</h5>
+              <h5 className='email'>{user.email}</h5>
               <div className='about-me'>
                 <h3>About me</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis explicabo dolor officiis magni voluptatibus voluptatum labore! Dolores nihil consectetur assumenda iusto ipsam corrupti dolor aliquam tempore, nesciunt, quae, labore quos consequatur hic. Quos sunt illum labore soluta tempora architecto eum.</p>
               </div>
               
           </div>
-          <Link to="/"><button className="btn-signIn">Logout</button></Link>
+          <Link to="/"><button className="btn-Logout">Logout</button></Link>
+          <footer className='footer'>Copyright &copy; InstaJoke 2023</footer>
           <NavBar/>
           </div>
       )

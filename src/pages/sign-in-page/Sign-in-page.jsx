@@ -17,7 +17,7 @@ const handleSubmit=(e)=>{
 e.preventDefault()
 }
 
-
+console.log(user)
     return (
     <div>
        <div className="logo-sign-page">
@@ -48,16 +48,17 @@ e.preventDefault()
                 name="password"
                 onChange={handleChange}
                 ></input>
-                <Link to={user.email == userLogin.email ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
+                <Link to={(user.email == userLogin.email && user.length > 0) ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
                 </div>
+                
             </form>
             <div className="container-register">
             <p>Not a member?</p>
             <Link to="/register"><button className="btn-register">Register</button></Link>
             </div>
-
-       
+            
        </div>
+       
     )
 }
 
