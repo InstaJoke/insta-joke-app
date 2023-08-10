@@ -27,7 +27,7 @@ const WeeklyJoke = () => {
     <div className='weekly-joke'>
         <Logo/>
         <h2 className='daily-joke-title'>Weekly Joke</h2>
-        <div className='content-joke'>
+        <div className='content-joke-week'>
         {weeklyJoke ? <p className='title-joke'>{weeklyJoke.type.toUpperCase()}</p> : <p>loading..</p>}
         {weeklyJoke ? <p className='joke-line'>{weeklyJoke.setup}</p> : <p>loading..</p>}
         {weeklyJoke ? <p className='joke-line'>{weeklyJoke.punchline}</p> : <p>loading..</p>}
