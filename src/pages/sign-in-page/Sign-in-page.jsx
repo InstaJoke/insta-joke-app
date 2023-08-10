@@ -17,9 +17,9 @@ const handleSubmit=(e)=>{
 e.preventDefault()
 }
 
-
+console.log(user)
     return (
-        <>
+    <div>
        <div className="logo-sign-page">
         <h1>InstaJoke</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" viewBox="0 0 55 50" fill="none">
@@ -30,8 +30,8 @@ e.preventDefault()
         </svg>
        </div> 
        
-       <div >
-            <form className="form-container" onSubmit={(e)=>handleSubmit(e,userLogin)}>
+
+            <form className="form-sign-in" onSubmit={(e)=>handleSubmit(e,userLogin)}>
                 <div className="container-input">
                 <label htmlFor="email">Email</label>
                 <input className="input-signIn"
@@ -48,8 +48,9 @@ e.preventDefault()
                 name="password"
                 onChange={handleChange}
                 ></input>
-                <Link to={user.email == userLogin.email ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
+                <Link to={(user.email == userLogin.email && user.length > 0) ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
                 </div>
+                
             </form>
             <div className="container-register">
             <p>Not a member?</p>
@@ -58,7 +59,6 @@ e.preventDefault()
             
        </div>
        
-       </>
     )
 }
 

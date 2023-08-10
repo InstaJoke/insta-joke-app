@@ -5,7 +5,6 @@ import WeeklyJoke from "./pages/Weekly-joke/WeeklyJoke"
 import SignUpPage from "./pages/sign-up-page/Sign-up-page"
 import ProfilePage from "./pages/Profile-page/ProfilePage"
 import HomePage from "./pages/home-page/HomePage"
-
 import { Routes,Route } from "react-router-dom"
 import "./App.css"
 

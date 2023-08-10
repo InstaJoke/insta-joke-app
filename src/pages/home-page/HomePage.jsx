@@ -26,27 +26,29 @@ const randomMemes = [
 ];
 /*--------------------RANDOM MEMES----------*/
 const HomePage = () => {
+
   /*--------------------DEFAULT MEMES----------*/
   const [defaultMemes, setDefaultMemes] = useState();
   const [indx, setIndx] = useState(0);
+  
   const mainMemes = {
     method: "GET",
     url: "https://memes-from-reddit.p.rapidapi.com/memes/",
     headers: {
-      "X-RapidAPI-Key": "4e0129f40cmsh800ffe5967cb12dp179c82jsn533929c5a352",
-      "X-RapidAPI-Host": "memes-from-reddit.p.rapidapi.com",
+      'X-RapidAPI-Key': 'daa435a9a2msh694f34f66f41d8dp1342eajsn9512db48cff2',
+      'X-RapidAPI-Host': 'memes-from-reddit.p.rapidapi.com'
     },
   };
   const getMemes = () => {
     axios
       .request(mainMemes)
       .then((response) => {
-        // console.log(response.data.data);
+
         setDefaultMemes(response.data?.data[indx]?.url);
       })
       .catch((error) => {
         console.error(error);
-        // console.log(Math.floor(Math.random() * (4 - 0 + 1)) + 0)
+
         setDefaultMemes(
           randomMemes[Math.floor(Math.random() * (4 - 0 + 1)) + 0]
         );
@@ -126,7 +128,6 @@ const HomePage = () => {
           {defaultMemes ? (
             <img
               className="img-content"
-              style={{ width: "100%" }}
               src={defaultMemes}
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
@@ -137,7 +138,6 @@ const HomePage = () => {
           ) : (
             <img
               className="img-content"
-              style={{ width: "100%" }}
               src={random.image}
               alt="default meme image"
             />
@@ -182,7 +182,6 @@ const HomePage = () => {
       ) : textJoke && toggle === 3 ? (
         <>
           <div className="content-joke">
-            {/* {textJoke ? <p>{textJoke.type}</p> : <p>loading..</p>} */}
             {textJoke ? <p>{textJoke.setup}</p> : <p>loading..</p>}
             {textJoke ? <p>{textJoke.punchline}</p> : <p>loading..</p>}
             <button className="btn-weekly" onClick={getTextJoke}>
@@ -191,57 +190,14 @@ const HomePage = () => {
           </div>
         </>
       ) : (
-       <div>
-        <img style={{width:"100%"}} src={random}/>
+       <div className="show-content">
+        <img className="img-content" src={random}/>
        </div>
       )}
-      {/* ------------Random Memes----------- */}
-      {/* <div className={toggle == 2 ? "show-content" : "content"}>
-        <div>
-          <img style={{ width: "100%" }} src={random.image} alt="fhf"></img>
-        </div>
-        <div className="container-btn">
-          <button className="btn-content" onClick={() => setIndx(indx - 1)}>
-            <svg
-              style={{ width: "2rem" }}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-              />
-            </svg>
-          </button>
-          <button className="btn-content" onClick={() => setIndx(indx + 1)}>
-            <svg
-              style={{ width: "2rem" }}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
-        </div>
-      </div> */}
-      {/* ------------Random Memes------------ */}
       <SocialInteraction />
       <NavBar />
     </>
   );
 };
-//
+
 export default HomePage;
