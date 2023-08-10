@@ -48,9 +48,9 @@ const ExplorePage = ()=> {
             </div>
             <div>
             { memes ? (
-                <div className="container-memes">
+                <div className="cards">
                 {memes.map((ele)=>(
-                    <div key={ele.title}>
+                    <div className="card" key={ele.title}>
                         <img className="meme-img" src={ele.url} />
                     </div>
                 ))}
