@@ -17,7 +17,7 @@ const handleSubmit=(e)=>{
 e.preventDefault()
 }
 
-console.log(user)
+console.log(window)
     return (
     <div>
        <div className="logo-sign-page">
@@ -48,7 +48,7 @@ console.log(user)
                 name="password"
                 onChange={handleChange}
                 ></input>
-                <Link to={(user.email == userLogin.email && user.length > 0) ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
+                <Link to={(user.email == userLogin.email || user.length > 0) ? "/home" : "/"}><button className="btn-signIn">Sign in</button></Link>
                 </div>
                 
             </form>
