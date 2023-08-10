@@ -37,8 +37,6 @@
     border: none;
     background-color: rgb(255, 255, 255);
 }
-
-/*-----changed name to cards*/
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -59,36 +57,87 @@
     background-color: #FFC078;
 }
 
-@media screen and (min-width:1024px) {
+.img-card{
+    width: 100%;
+}
+
+/*------------------ TABLET VERSION ( 768px )--------------------------*/
+
+@media screen and (min-width:768px) {
+    .container-search {
+        margin-bottom: 1rem;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.3rem;
+    }
+    .card {
     
-   .cards {
-       width: 100%;
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       grid-gap:5px;
-   }
-   
-   .card{
-       position: relative;
-       height: 214px;
-       border-radius: 10px;
-       cursor: pointer;
-       height: 280px;
-       width: 280px;
-   
-   }
-   
-   .meme-img {
-       width:100%;
-       height: 100%;
-       border-radius: 10px;
-   }
-   }
+        height: 19rem;
+        width: 19rem;
+    }
+    .meme-img {
+        height: 100%;
+        border-radius: 0.3rem;
+    }
+}
+/*------------------ LAPTOP VERSION ( 1024px )--------------------------*/
 
-   @media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
+    .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 0.3rem;
+    }
+    .card {
+        position: relative;
+        height: 17rem;
+        width: 17.6rem;
+    }
+    .search-bar {
+        padding: 0.5rem;
+    }
+    .container-search {
+        width: 65%;
+        margin-bottom: 3rem;
+    }
 
-   .card{ 
-       height: 380px;
-       width: 380px;
-   }
-   }
+    .meme-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+    .meme-img:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .btn-explore {
+        cursor: pointer;
+        transition: all 0.8s;
+    }
+    .btn-explore:hover {
+        border-radius: 2rem;
+        border: 1px solid #fcad52;
+    }
+    .btn-search {
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+/*------------------ DESKTOP VERSION ( 1640px )--------------------------*/
+
+@media screen and (min-width:1640px) {
+    .search-bar {
+        padding: 0.5rem;
+    }
+    .container-search {
+        width: 55%;
+    }
+
+}
+

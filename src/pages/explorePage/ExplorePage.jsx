@@ -6,11 +6,12 @@ import NavBar from "../../components/nav-bar/NavBar"
 
 const ExplorePage = ()=> {
     const [memes,setMemes] = useState([])
-    const [limit,setLimit] = useState('2')
+    const [limit,setLimit] = useState(3)
 
     const options = {
         method: 'GET',
         url: 'https://memes-from-reddit.p.rapidapi.com/memes/top',
+        mode:'cors',
         params:{limit:limit},
         headers: {
           'X-RapidAPI-Key': 'daa435a9a2msh694f34f66f41d8dp1342eajsn9512db48cff2',
@@ -25,14 +26,12 @@ const ExplorePage = ()=> {
       }
 
       const handleLimit = ()=> {
-        setLimit('5')
+        setLimit(limit + 3)
       }
 
       useEffect(()=> {
         getMemes()
       },[limit])
-
-    
 
     return (
       <div>
@@ -51,13 +50,19 @@ const ExplorePage = ()=> {
                 <div className="cards">
                 {memes.map((ele)=>(
                     <div className="card" key={ele.title}>
-                        <img className="meme-img" src={ele.url} />
+                        <img 
+                        className="meme-img" src={ele.url}
+                        onError={({ currentTarget }) => {
+                          currentTarget.onerror = null;
+                          currentTarget.src = "https://easyfamilyfun.com/wp-content/uploads/2022/10/Funny-animal-memes-88.jpeg";
+                        }}
+                        />
                     </div>
                 ))}
-                <button onClick={handleLimit} className="btn-explore">See more...</button>
                 </div>  
               ) : null  }
             </div>
+              <button onClick={handleLimit} className="btn-explore">See more...</button>
             
         </div>
        
